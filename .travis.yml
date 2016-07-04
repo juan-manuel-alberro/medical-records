@@ -14,7 +14,7 @@ before_script:
 script: gulp build
 notifications:
   email: true
-after_failure: cat /home/travis/build/mgechev/angular2-seed/npm-debug.log
+after_failure: cat /home/travis/build/juan-manuel-alberro/angular2-starter-kit/npm-debug.log
 branches:
   only:
   - master
