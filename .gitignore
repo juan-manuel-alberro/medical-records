@@ -7,5 +7,6 @@
 /src/tmp
 .DS_Store
 /src/assets/styles/*.css
-/src/**/*.js
+/src/app/**/*.js
+/src/test/**/*.js
 /src/**/*.map

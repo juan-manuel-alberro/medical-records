@@ -17,6 +17,7 @@ This starter contains
 * [Gulp](http://gulpjs.com/) (Tasks: *serve*, *watch*, *compile*, *test* to *build*)
 * [Browsersync](https://www.browsersync.io/)
 * [SystemJS](https://github.com/systemjs/systemjs)
+* [ng2-i18next](https://www.npmjs.com/package/ng2-i18next)
 * [Codelyzer](https://github.com/mgechev/codelyzer)
 * [Karma](http://karma-runner.github.io/)
 * [Jasmine](http://jasmine.github.io/)
@@ -29,6 +30,13 @@ Let's start up the server, run:
 `gulp` or `gulp serve-dev`
 
 All the `.js` files are ignored and should't be uploaded to the repository.
+
+## I18n
+There's a directive to translate the strings in the html files, just do something like this
+
+```html
+<p i18n="my.key">fallback string</p>
+```
 
 ## Testing
 This starter comes with testing gulp workflow
