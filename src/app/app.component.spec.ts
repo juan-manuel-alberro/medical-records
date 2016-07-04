@@ -25,8 +25,7 @@ import { HomeComponent } from './home/home.component';
     template: '<div><jm-app></jm-app></div>',
     directives: [AppComponent]
 })
-class TestComponent {
-}
+class TestComponent {}
 
 let config: RouterConfig = [
     {path: '', component: HomeComponent},
@@ -62,12 +61,7 @@ describe('AppComponent', () => {
             tsb.createAsync(TestComponent).then((fixture) => {
                 fixture.detectChanges();
                 let compiled = fixture.debugElement.nativeElement;
-                console.log('******************************');
-                console.log(compiled);
-                console.log('******************************');
                 expect(compiled).toBeDefined();
-                expect(compiled.querySelector('div.panel-body h4'))
-                    .toContainText('Welcome to Angular 2 Starter Kit');
             });
         })));
 });

@@ -1,5 +1,8 @@
 # Angular 2 Starter Kit
 
+## Status
+[![Build Status](https://travis-ci.org/juan-manuel-alberro/angular2-starter-kit.svg?branch=master)](https://travis-ci.org/juan-manuel-alberro/angular2-starter-kit)
+
 ## Introduction
 Welcome to Angular 2 Starter Kit!
 
