@@ -1,7 +1,7 @@
 # Angular 2 Starter Kit
 
 ## Status
-[![Build Status](https://travis-ci.org/juan-manuel-alberro/angular2-starter-kit.svg?branch=master)](https://travis-ci.org/juan-manuel-alberro/angular2-starter-kit)
+[![Build Status](https://travis-ci.org/juan-manuel-alberro/angular2-starter-kit.svg?branch=master)](https://travis-ci.org/juan-manuel-alberro/angular2-starter-kit) [![Coverage Status](https://coveralls.io/repos/github/juan-manuel-alberro/angular2-starter-kit/badge.svg?branch=master)](https://coveralls.io/github/juan-manuel-alberro/angular2-starter-kit?branch=master)
 
 ## Introduction
 Welcome to Angular 2 Starter Kit!
