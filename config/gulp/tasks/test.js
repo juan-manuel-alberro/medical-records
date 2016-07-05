@@ -4,6 +4,7 @@ var Server = require('karma').Server;
 var gulpProtractor = require('gulp-protractor');
 var remapIstanbul = require('remap-istanbul/lib/gulpRemapIstanbul');
 var runSequence = require('run-sequence');
+var coveralls = require('gulp-coveralls');
 var argv = require('yargs')
             .alias('w', 'watch')
             .argv;
@@ -29,6 +30,11 @@ gulp.task('unit-test', ['tsc'], function (done) {
     function karmaDone (exitCode) {
     	remapCoverage(done, exitCode);
     }
+});
+
+gulp.task('coveralls', function() {
+  gulp.src('report/remap/lcov.info')
+  .pipe(coveralls());
 });
 
 gulp.task('e2e', ['e2e-test']);

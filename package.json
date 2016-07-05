@@ -45,6 +45,7 @@
     "bootstrap-sass": "^3.3.6",
     "codelyzer": "0.0.24",
     "core-js": "^2.4.0",
+    "coveralls": "^2.11.9",
     "del": "~2.2.1",
     "font-awesome": "^4.6.3",
     "glob": "^7.0.5",
@@ -83,6 +84,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.13.0",
-    "connect-history-api-fallback": "^1.2.0"
+    "connect-history-api-fallback": "^1.2.0",
+    "gulp-coveralls": "^0.1.4"
   }
 }
