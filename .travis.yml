@@ -11,7 +11,7 @@ before_install:
 - sh -e /etc/init.d/xvfb start
 before_script:
   - npm install -g gulp
-script: gulp build
+script: gulp build && gulp fixPaths && gulp coveralls
 notifications:
   email: true
 after_failure: cat /home/travis/build/juan-manuel-alberro/angular2-starter-kit/npm-debug.log

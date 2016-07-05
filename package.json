@@ -85,6 +85,7 @@
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "connect-history-api-fallback": "^1.2.0",
-    "gulp-coveralls": "^0.1.4"
+    "gulp-coveralls": "^0.1.4",
+    "gulp-replace-path": "^0.4.0"
   }
 }

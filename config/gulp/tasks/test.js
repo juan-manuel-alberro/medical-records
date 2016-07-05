@@ -5,6 +5,8 @@ var gulpProtractor = require('gulp-protractor');
 var remapIstanbul = require('remap-istanbul/lib/gulpRemapIstanbul');
 var runSequence = require('run-sequence');
 var coveralls = require('gulp-coveralls');
+var replace = require('gulp-replace-path');
+var path = require('path');
 var argv = require('yargs')
             .alias('w', 'watch')
             .argv;
@@ -33,8 +35,14 @@ gulp.task('unit-test', ['tsc'], function (done) {
 });
 
 gulp.task('coveralls', function() {
-  gulp.src('report/remap/lcov.info')
+  gulp.src(config.report.path + 'remap/lcov.info')
   .pipe(coveralls());
+});
+
+gulp.task('fixPaths', function(){
+  gulp.src([config.report.path + 'remap/lcov.info'])
+    .pipe(replace(/\/source/g, 'src'))
+    .pipe(gulp.dest(function(data){ return data.base; }))
 });
 
 gulp.task('e2e', ['e2e-test']);
