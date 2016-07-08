@@ -14,7 +14,7 @@ before_script:
 script: gulp build && gulp fixPaths && gulp coveralls
 notifications:
   email: true
-after_failure: cat /home/travis/build/juan-manuel-alberro/angular2-starter-kit/npm-debug.log
+after_failure: cat /home/travis/build/juan-manuel-alberro/medical-records/npm-debug.log
 branches:
   only:
   - master
