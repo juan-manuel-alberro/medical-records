@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/juan-manuel-alberro/medical-records.png?label=ready&title=Ready)](https://waffle.io/juan-manuel-alberro/medical-records)
 # Angular 2 Starter Kit
 
 ## Status
