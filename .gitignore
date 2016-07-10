@@ -10,4 +10,3 @@
 /src/app/**/*.js
 /src/test/**/*.js
 /src/**/*.map
-npm-debug.log
